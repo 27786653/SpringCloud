@@ -17,3 +17,12 @@
 
 ## 说明
    服务提供方注册-api网关注册-被服务方注册
+
+## 访问
+服务注册中心：http://localhost:10000/
+服务提供方1：http://localhost:10001/add?a=10&b=20
+服务提供方2：http://localhost:10002/add?a=10&b=20
+被服务放访问：http://localhost:10004/add
+(Ribbon对服务的负载均衡-访问的时候可以看服务端各自会有打印证明实现均衡,Hystrix熔断器-可停止提供服务之后调用fallbackMethod指定的方法)
+通过API网关访问：http://localhost:10004/api-a/add?a=1&b=2&accessToken=token
+(无accessToken参数会报错401)
