@@ -1,5 +1,8 @@
 package com.yuhi;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.config.server.EnableConfigServer;
@@ -21,7 +24,8 @@ public class Application {
 	//URl： http://localhost:10003/cloud/config-test
 	//url:http://localhost:10003/cloud-config/test
     public static void main(String[] args) {
-        new SpringApplicationBuilder(Application.class).web(true).run(args);
+       new SpringApplicationBuilder(Application.class).web(true).run(args);
     }
+    
 
 }

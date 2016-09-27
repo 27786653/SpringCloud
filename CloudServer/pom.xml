@@ -9,6 +9,8 @@
   	<module>ServerProvider</module>
   	<module>ServerConsumption</module>
   	<module>ConfigServer</module>
+  	<module>ServerProvider2</module>
+  	<module>ZuulServerWay</module>
   </modules>
  <parent>  
     <groupId>org.springframework.boot</groupId>
