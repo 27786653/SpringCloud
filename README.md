@@ -9,11 +9,11 @@
     
 ## 启动顺序  
     1.registerServerCenter -> RegisterServerApplication 端口：10000
-    1.ConfigServer -> Application 端口：10003
-    1.ZuulServerWay -> Application 端口：10004
-    1.ServerProvider -> ComputeServiceApplication 端口：10001
-    1.ServerProvider2 -> ComputeServiceApplication 端口：10002
-    1.ServerConsumption -> RibbonApplication 端口：10004
+    2.ConfigServer -> Application 端口：10003
+    3.ZuulServerWay -> Application 端口：10004
+    4.ServerProvider -> ComputeServiceApplication 端口：10001
+    5.ServerProvider2 -> ComputeServiceApplication 端口：10002
+    6.ServerConsumption -> RibbonApplication 端口：10004
 
 ## 说明   
    服务提供方注册-api网关注册-被服务方注册   
